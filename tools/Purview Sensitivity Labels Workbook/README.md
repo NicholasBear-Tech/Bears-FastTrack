@@ -8,9 +8,9 @@ Hello! The purpose of this Excel workbook Sensitivity Label template is to help 
 
 [Migrate parent sensitivity labels to label groups](https://learn.microsoft.com/en-us/purview/migrate-sensitivity-label-scheme)
 
-[Download the Blank Fill In Workbook Here](https://github.com/NicholasBear-Tech/Bears-FastTrack/raw/refs/heads/master/tools/Purview%20Sensitivity%20Labels%20Workbook/Sensitivity%20Label%20Workbook%20v1.8%20-%20Fill%20In.xlsx)
+[Download the Blank Fill In Workbook Here](https://github.com/NicholasBear-Tech/Bears-Tech/raw/refs/heads/main/Tools/Purview%20Sensitivity%20Labels%20Workbook/Sensitivity%20Label%20Workbook%20v1.8%20-%20Fill%20In.xlsx)
 
-[Download the Secure by Default Filled In Workbook Here](https://github.com/NicholasBear-Tech/Bears-FastTrack/raw/refs/heads/master/tools/Purview%20Sensitivity%20Labels%20Workbook/Sensitivity%20Label%20Workbook%20v1.8%20-%20Secure%20by%20Default.xlsx)
+[Download the Secure by Default Filled In Workbook Here](https://github.com/NicholasBear-Tech/Bears-Tech/raw/refs/heads/main/Tools/Purview%20Sensitivity%20Labels%20Workbook/Sensitivity%20Label%20Workbook%20v1.8%20-%20Secure%20by%20Default.xlsx)
 
 ## Explanation of Tabs
 
@@ -71,7 +71,7 @@ In the workbook we have included a section on "Explanation" and "Links" to help 
 <img width="317" height="418" alt="image" src="https://github.com/user-attachments/assets/283f4ccf-13df-4016-b1e9-b026e592a3cb" />
 
 > [!IMPORTANT]  
-> The "big numbers" on the left side of the workbook are tied together for the "Labels" (Blue) tabs. You'll also use these numbers when looking at the "Summery" and "Search" tabs as well. The other tabs "big numbers" are not directly linked to these "big numbers" hence why they are a different color. 
+> The "big numbers" on the left side of the workbook are tied together for the "Labels" (Blue) tabs. You'll also use these numbers when looking at the "Summary" and "Search" tabs as well. The other tabs "big numbers" are not directly linked to these "big numbers" hence why they are a different color. 
 
 1. First you should read the "How to Use" tab in case there is anything in there that you need to know or look up. 
 
@@ -83,13 +83,13 @@ The Sensitivity Label Workbook
     <img width="1917" height="759" alt="Microsoft Purview Admin Center Label 1" src="https://github.com/user-attachments/assets/93d173ac-146e-4068-95a4-fcbce2808516" /> Microsoft Purview Sensitivity Label admin center
 
 > [!NOTE]  
-> If you select "Parent Label" or "Label Group" Then the "Scope" will be blank since they are meant to be containers for other labels and will not show in the Scopes' tabs. They will also be blank in the "Summery" tab and in the "Search" tab when looking up that "Sensitivity Label".
+> If you select "Parent Label" or "Label Group" Then the "Scope" will be blank since they are meant to be containers for other labels and will not show in the Scopes' tabs. They will also be blank in the "Summary" tab and in the "Search" tab when looking up that "Sensitivity Label".
 
 3. There are 3 fields in this tab that MUST BE FILLED OUT for the "Label" to show in other tabs and be configurable. Othar than that you would fill out the rest of the fields in each label as needed and in the priority order you want. 
 
     - The 3 fields are "Label/ParentLabel/LabelGroup/Sub-Label:, "Name:", and "Scope:". 
     
-    - In "Label/Parent Label/Label Group/Sub-Label:" your options are "Parent Label, Label Group, Label, and Sub Label.". A quick explanation and which to use are below. The options that you have to select for this to show in other tabs and be configurable are "Labels and Sub Labels" since "Parent Labels and Label Groups" are containers for labels and not meant/don't have labels (Scopes).
+    - In "Label/Parent Label/Label Group/Sub-Label:" your options are "Parent Label, Label Group, Label, and Sub Label.". A quick explanation and which to use are below. The options that you must select for this to show in other tabs and be configurable are "Labels and Sub Labels" since "Parent Labels and Label Groups" are containers for labels and not meant/don't have labels (Scopes).
 
         1. Label: This is a Label 
     
@@ -103,7 +103,7 @@ The Sensitivity Label Workbook
 
     - Lastly, we have the "Scope" filled that must be filled out. Your options are "Files, & Other Data", "Emails", "Meetings", and "Groups & Sites". You can select all or none based on what functionality you need the Sensitivity Label to have. A quick explanation and which to use are below.
 
-        1. Files, & Other Data: This must be selected if you want this label to be an option in the "Emails, Files, & Other Data". You can just select this and or "Emails" to have the label as an option in "Emails, Files, & Other Data" tab. Both "Files, & Other Data" and "Emails" must be selected for "Meetings" to be an option to select.
+        1. Files, & Other Data: This must be selected if you want this label to be an option in "Emails, Files, & Other Data". You can just select this and or "Emails" to have the label as an option in "Emails, Files, & Other Data" tab. Both "Files, & Other Data" and "Emails" must be selected for "Meetings" to be an option to select.
 
         2. Emails: This must be selected if you want this label to be an option in the "Emails, Files, & Other Data" tab. You can just select this and or "Files, & Other Data" to have the label as an option in "Emails, Files, & Other Data" tab. Both "Files, & Other Data" and "Emails" must be selected for "Meetings" to be an option to select.
 
@@ -121,13 +121,13 @@ The Sensitivity Label Workbook
 
 6. Then you can fill out "Service-side Auto-Labeling" and or "Data Loss Prevention (DLP)" based on your plans to use the labels with them. 
 
-## Summery Tab
+## Summary Tab
 
 <img width="1698" height="140" alt="image" src="https://github.com/user-attachments/assets/6f9b18a0-83bc-4870-b9c0-7060c18d396a" />
 
-This tab is to give you an easier view to read your labels, and what will end up being your "Label Taxonomy". It is a "Read Only" view. If you need to make any changes or view specifics, then you would either go to the appropriate tab or use the "Search" tab to search for the "Label" and or "Policies" that you need to see the configurations of.
+This tab is to give you an easier way to read your labels, and what will end up being your "Label Taxonomy". It is a "Read Only" view. If you need to make any changes or view specifics, then you would either go to the appropriate tab or use the "Search" tab to search for the "Label" and or "Policies" that you need to see the configurations of.
 
-Below I will explain where each columns information is pulled and how we are triggering the fields.
+Below I will explain where each column's information is pulled and how we are triggering the fields.
 
 - Label/Parent Label/Label Group/Sub-Label:
   - This is pulled directly from the same section in the "Sensitivity Labels" tab.
@@ -179,7 +179,7 @@ Below I will explain where each columns information is pulled and how we are tri
 
     <img width="623" height="113" alt="image" src="https://github.com/user-attachments/assets/6d370261-3d93-494c-96e1-3242429e4acd" />
 
-    - If you selected the "Meetings" box under "Scope" in the "Sensitivity Labels" tab then this is will "Yes" in not, then it will be "No".
+    - If you selected the "Meetings" box under "Scope" in the "Sensitivity Labels" tab, then this will show "Yes" if not, then it will show "No".
 
 - Define privacy and external user access settings:
     -  This is pulled directly from the "Define privacy and external user access settings" section in the "Groups & Sites" tab. 
@@ -194,7 +194,7 @@ Below I will explain where each columns information is pulled and how we are tri
     
     - Let Microsoft 365 Group owners add people outside your organization to the group as guests:
         <img width="326" height="105" alt="image" src="https://github.com/user-attachments/assets/a4b6cc9c-1026-49f1-8325-cc73c950e874" />
-        - If you select the box of the "Same" name it will be "Yes" otherwise it will be "No".
+        - If you select the box of the "Same" name, it will be "Yes" otherwise it will be "No".
 
 - External sharing and Conditional Access:
 
@@ -204,13 +204,13 @@ Below I will explain where each columns information is pulled and how we are tri
     
         <img width="287" height="86" alt="image" src="https://github.com/user-attachments/assets/7dc50107-05a2-48ee-b723-f5e8b4389479" />
 
-        - If you select the box of the "Same" name it will be "Yes" otherwise it will be "No".
+        - If you select the box of the "Same" name, it will be "Yes" otherwise it will be "No".
 
     - Use Microsoft Entra Conditional Access to protect labeled SharePoint sites:
     
         <img width="287" height="87" alt="image" src="https://github.com/user-attachments/assets/9535ee9b-38a4-4a2c-ae7b-399347a1c035" />
 
-        - If you select the box of the "Same" name it will be "Yes" otherwise it will be "No".
+        - If you select the box of the "Same" name, it will be "Yes" otherwise it will be "No".
 
 - Private teams discoverability and shared channel controls:
 
@@ -220,13 +220,13 @@ Below I will explain where each columns information is pulled and how we are tri
       
         <img width="392" height="131" alt="image" src="https://github.com/user-attachments/assets/2a77c96d-e071-4443-89eb-62c684826e09" />
  
-      - If you select the box of the "Same" name it will be "Yes" otherwise it will be "No".
+      - If you select the box of the "Same" name, it will be "Yes" otherwise it will be "No".
 
     - Teams shared channels:
       
         <img width="389" height="132" alt="image" src="https://github.com/user-attachments/assets/0ca448c4-dc8b-4528-999d-82e705143dfe" />
 
-      - If you selected any "boxes" under "this" section the answer will be "Yes" otherwise it will be "No".  
+      - If you selected any "boxes" under "this" section, the answer will be "Yes" otherwise it will be "No".  
 
 ## Search Tab
 
